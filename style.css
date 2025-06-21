@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --main-bg: #766af0;
+  --main-card: #ffffff;
+  --text-color: #222;
+  --accent: #ffd166;
+  --link-color: #fff;
+  --form-color: #f5f5f5;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--main-bg);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+.header, .footer {
+  background: var(--main-bg);
+  color: var(--link-color);
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+nav a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.card {
+  background: var(--main-card);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px var(--shadow);
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--main-bg);
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  margin-top: 1.2rem;
+}
+
+select, input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: var(--form-color);
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent);
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ffe066;
+}
+
+#moodMessage {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--main-bg);
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #eee;
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+thead {
+  background-color: #f0f0ff;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}

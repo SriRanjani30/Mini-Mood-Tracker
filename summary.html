@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mood Summary</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body onload="loadMoodHistory()">
+  <header class="header">
+    <h1 class="site-title">📋 Mood History</h1>
+    <nav>
+      <a href="index.html">⬅️ Back to Tracker</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>Your Mood Entries</h2>
+      <table id="moodTable">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Mood</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="button-group">
+        <button onclick="toggleTableVisibility()">👁️ Toggle Table</button>
+        <button onclick="clearHistory()">🗑️ Clear History</button>
+      </div>
+
+      <p id="statusMsg" class="status-msg"></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>📅 Reflect and track how you're feeling</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

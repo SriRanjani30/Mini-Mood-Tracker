@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Mood Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <h1 class="site-title">🧠 Mini Mood Tracker</h1>
+    <nav>
+      <a href="summary.html">📈 View Summary</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <form id="moodForm">
+        <h2>How are you feeling today?</h2>
+
+        <label for="moodSelect">Your Mood</label>
+        <select id="moodSelect" onchange="updateMoodMessage()" required>
+          <option value="">-- Choose your mood --</option>
+          <option value="happy">😊 Happy</option>
+          <option value="sad">😢 Sad</option>
+          <option value="angry">😠 Angry</option>
+        </select>
+
+        <label for="moodComment">Optional Note</label>
+        <input type="text" id="moodComment" placeholder="e.g., I got praised in class!" maxlength="100"/>
+
+        <button type="button" onclick="storeMood()">💾 Save Mood</button>
+      </form>
+
+      <div id="moodMessage">Select a mood to see a message.</div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Crafted by Sri Ranjani! | 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
